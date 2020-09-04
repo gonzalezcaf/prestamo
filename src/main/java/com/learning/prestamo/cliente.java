@@ -6,12 +6,87 @@ package com.learning.prestamo;
 
 public class cliente implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public cliente() {
-    }
+	@org.kie.api.definition.type.Description(value = "Cedula del cliente")
+	@org.kie.api.definition.type.Label(value = "Cedula")
+	private java.lang.Integer cedula;
+	@org.kie.api.definition.type.Description(value = "Edad del cliente")
+	@org.kie.api.definition.type.Label(value = "Edad")
+	private java.lang.Integer edad;
+	@org.kie.api.definition.type.Description(value = "Numero de cuenta del cliente")
+	@org.kie.api.definition.type.Label(value = "Cuenta")
+	private java.lang.Integer cuenta;
+	@org.kie.api.definition.type.Description(value = "Tipo de Cuenta del cliente \nA=Ahorros\nTC=Tarjeta de credito\nC=Corriente\nNA=No tiene cuentas")
+	@org.kie.api.definition.type.Label(value = "Tipo Cuenta")
+	private java.lang.String tipocuenta;
+	@org.kie.api.definition.type.Description(value = "Saldo de la cuenta")
+	@org.kie.api.definition.type.Label(value = "Saldo")
+	private java.lang.Integer saldo;
+	@org.kie.api.definition.type.Description(value = "Presenta Mora en la cuenta?")
+	@org.kie.api.definition.type.Label(value = "Mora")
+	private java.lang.Boolean mora;
 
+	public cliente() {
+	}
 
+	public java.lang.Integer getCedula() {
+		return this.cedula;
+	}
 
+	public void setCedula(java.lang.Integer cedula) {
+		this.cedula = cedula;
+	}
+
+	public java.lang.Integer getEdad() {
+		return this.edad;
+	}
+
+	public void setEdad(java.lang.Integer edad) {
+		this.edad = edad;
+	}
+
+	public java.lang.Integer getCuenta() {
+		return this.cuenta;
+	}
+
+	public void setCuenta(java.lang.Integer cuenta) {
+		this.cuenta = cuenta;
+	}
+
+	public java.lang.String getTipocuenta() {
+		return this.tipocuenta;
+	}
+
+	public void setTipocuenta(java.lang.String tipocuenta) {
+		this.tipocuenta = tipocuenta;
+	}
+
+	public java.lang.Integer getSaldo() {
+		return this.saldo;
+	}
+
+	public void setSaldo(java.lang.Integer saldo) {
+		this.saldo = saldo;
+	}
+
+	public java.lang.Boolean getMora() {
+		return this.mora;
+	}
+
+	public void setMora(java.lang.Boolean mora) {
+		this.mora = mora;
+	}
+
+	public cliente(java.lang.Integer cedula, java.lang.Integer edad,
+			java.lang.Integer cuenta, java.lang.String tipocuenta,
+			java.lang.Integer saldo, java.lang.Boolean mora) {
+		this.cedula = cedula;
+		this.edad = edad;
+		this.cuenta = cuenta;
+		this.tipocuenta = tipocuenta;
+		this.saldo = saldo;
+		this.mora = mora;
+	}
 
 }
