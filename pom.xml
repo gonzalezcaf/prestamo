@@ -8,6 +8,12 @@
   <packaging>kjar</packaging>
   <name>prestamo</name>
   <description>Proyecto de solicitud de prestamo para libre inversion.</description>
+  <distributionManagement>
+    <repository>
+      <id>bxms-projects</id>
+      <url>http://192.168.122.40:8081/repository/bxms-projects/</url>
+    </repository>
+  </distributionManagement>  
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
