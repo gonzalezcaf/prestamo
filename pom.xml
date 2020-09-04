@@ -7,7 +7,7 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>prestamo</name>
-  <description>Proyesto de solicitud de prestamo para libre inversion.</description>
+  <description>Proyecto de solicitud de prestamo para libre inversion.</description>
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
