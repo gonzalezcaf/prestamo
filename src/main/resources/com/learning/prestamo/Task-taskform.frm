@@ -1,0 +1,1 @@
+{"id":"72a2cbb4-9168-43a8-bbc0-33599b47a7dc","name":"Task-taskform.frm","model":{"taskName":"Task","processId":"prestamo.solicitud_prestamo","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
