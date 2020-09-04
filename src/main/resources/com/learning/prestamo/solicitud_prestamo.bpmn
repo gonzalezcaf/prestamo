@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:drools="http://www.jboss.org/drools" id="_DN5R0O7WEeqwifMJcIarBA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:process id="prestamo.solicitud_prestamo" drools:packageName="com.learning.prestamo" drools:version="1.0" drools:adHoc="false" name="solicitud_prestamo" isExecutable="true" processType="Public"/>
+  <bpmndi:BPMNDiagram id="_DN5R0e7WEeqwifMJcIarBA">
+    <bpmndi:BPMNPlane id="_DN5R0u7WEeqwifMJcIarBA" bpmnElement="prestamo.solicitud_prestamo"/>
+  </bpmndi:BPMNDiagram>
+  <bpmn2:relationship id="_DN5R0-7WEeqwifMJcIarBA" type="BPSimData">
+    <bpmn2:extensionElements>
+      <bpsim:BPSimData>
+        <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
+          <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
+        </bpsim:Scenario>
+      </bpsim:BPSimData>
+    </bpmn2:extensionElements>
+    <bpmn2:source>_DN5R0O7WEeqwifMJcIarBA</bpmn2:source>
+    <bpmn2:target>_DN5R0O7WEeqwifMJcIarBA</bpmn2:target>
+  </bpmn2:relationship>
+</bpmn2:definitions>
