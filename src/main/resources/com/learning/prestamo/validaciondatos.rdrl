@@ -12,5 +12,10 @@ rule "validaciondatos"
 		valdatos.setErrorcode( -1 );
 		valdatos.setErrormessage( "Alguno de los datos de la solicitud es nulo." );
 		insert( valdatos );
+		modify( s ) {
+				setValidacion( valdatos )
+		}
 		System.out.println("Se ejecuto la regla:  " + drools.getRule().getName() );
+		System.out.println("Alguno de los datos de la solicitud es nulo.");
+		System.out.println(s.getIdSolicitud().toString());
 end
