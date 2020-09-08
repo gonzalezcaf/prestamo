@@ -1,0 +1,9 @@
+package com.learning.prestamo;
+
+import java.lang.Number;
+
+rule "validaciondatos"
+	dialect "mvel"
+	when
+	then
+end
