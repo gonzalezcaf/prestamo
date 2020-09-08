@@ -3,23 +3,23 @@
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>validaciondatos</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <fact-data>
-      <type>Cliente</type>
+      <type>Solicitud</type>
       <fieldData>
         <field-data>
-          <name>cedula</name>
+          <name>idSolicitud</name>
           <value>123</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
-      <name>c</name>
+      <name>s</name>
       <isModify>false</isModify>
     </fact-data>
-    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-      <name>validaciondatos</name>
-    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>22</executionTimeResult>
+      <executionTimeResult>42</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -30,7 +30,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2020-09-08 21:25:39.792 UTC</lastRunResult>
+  <lastRunResult>2020-09-08 23:59:28.658 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.learning.prestamo</packageName>
