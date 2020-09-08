@@ -6,6 +6,7 @@ rule "validaciondatos"
 	dialect "mvel"
 	ruleflow-group "validaciondatos"
 	when
+		s : Solicitud( idSolicitud == null || monto == null || montoaprobado == null )
 	then
 		ValidacionDatos valdatos = new ValidacionDatos();
 		valdatos.setErrorcode( -1 );
