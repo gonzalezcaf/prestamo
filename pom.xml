@@ -7,7 +7,7 @@
   <version>1.0.2</version>
   <packaging>kjar</packaging>
   <name>prestamo</name>
-  <description>Proyecto de solicitud de prestamo para libre inversion.</description>
+  <description>Proyecto de solicitud de prestamo para libre inversion</description>
   <distributionManagement>
     <repository>
       <id>bxms-projects</id>
