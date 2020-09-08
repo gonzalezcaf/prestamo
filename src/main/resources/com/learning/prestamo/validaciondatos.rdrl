@@ -4,7 +4,12 @@ import java.lang.Number;
 
 rule "validaciondatos"
 	dialect "mvel"
+	ruleflow-group "validaciondatos"
 	when
 		sol : solicitud( idSolicitud == null || monto == null || cliente == null )
 	then
+		ValidacionDatos valdatos = new ValidacionDatos();
+		valdatos.setErrorcode( -1 );
+		valdatos.setErrormessage( "Alguno de los datos de la solicitud es nulo." );
+		insert( valdatos );
 end
