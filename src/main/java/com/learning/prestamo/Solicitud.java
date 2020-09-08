@@ -17,8 +17,10 @@ public class Solicitud implements java.io.Serializable {
 	@org.kie.api.definition.type.Description("Monto Final Aprobado")
 	@org.kie.api.definition.type.Label("Monto Aprobado")
 	private java.lang.Integer montoaprobado;
-	@org.kie.api.definition.type.Label(value = "Cliente")
+	@org.kie.api.definition.type.Label("Cliente")
 	private com.learning.prestamo.Cliente cliente;
+	@org.kie.api.definition.type.Label(value = "Validacion")
+	private com.learning.prestamo.ValidacionDatos validacion;
 	public Solicitud() {
 	}
 
@@ -54,13 +56,23 @@ public class Solicitud implements java.io.Serializable {
 		this.cliente = cliente;
 	}
 
+	public com.learning.prestamo.ValidacionDatos getValidacion() {
+		return this.validacion;
+	}
+
+	public void setValidacion(com.learning.prestamo.ValidacionDatos validacion) {
+		this.validacion = validacion;
+	}
+
 	public Solicitud(java.lang.Integer idSolicitud, java.lang.Integer monto,
 			java.lang.Integer montoaprobado,
-			com.learning.prestamo.Cliente cliente) {
+			com.learning.prestamo.Cliente cliente,
+			com.learning.prestamo.ValidacionDatos validacion) {
 		this.idSolicitud = idSolicitud;
 		this.monto = monto;
 		this.montoaprobado = montoaprobado;
 		this.cliente = cliente;
+		this.validacion = validacion;
 	}
 
 }
