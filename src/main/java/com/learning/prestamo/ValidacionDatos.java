@@ -6,12 +6,38 @@ package com.learning.prestamo;
 
 public class ValidacionDatos implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ValidacionDatos() {
-    }
+	@org.kie.api.definition.type.Description(value = "Codigo del error")
+	@org.kie.api.definition.type.Label(value = "Codigo Error")
+	private java.lang.Integer errorcode;
+	@org.kie.api.definition.type.Description(value = "Mensaje del código del error")
+	@org.kie.api.definition.type.Label(value = "Mensaje Error")
+	private java.lang.String errormessage;
 
+	public ValidacionDatos() {
+	}
 
+	public java.lang.Integer getErrorcode() {
+		return this.errorcode;
+	}
 
+	public void setErrorcode(java.lang.Integer errorcode) {
+		this.errorcode = errorcode;
+	}
+
+	public java.lang.String getErrormessage() {
+		return this.errormessage;
+	}
+
+	public void setErrormessage(java.lang.String errormessage) {
+		this.errormessage = errormessage;
+	}
+
+	public ValidacionDatos(java.lang.Integer errorcode,
+			java.lang.String errormessage) {
+		this.errorcode = errorcode;
+		this.errormessage = errormessage;
+	}
 
 }
