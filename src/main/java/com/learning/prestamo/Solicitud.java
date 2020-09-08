@@ -6,24 +6,22 @@ package com.learning.prestamo;
 
 public class Solicitud implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Description(value = "Numero de solicitud de prestamo")
-	@org.kie.api.definition.type.Label(value = "Id Solicitud")
+	@org.kie.api.definition.type.Description("Numero de solicitud de prestamo")
+	@org.kie.api.definition.type.Label("Id Solicitud")
 	private java.lang.Integer idSolicitud;
-	@org.kie.api.definition.type.Description(value = "Monto de dinero solicitado")
-	@org.kie.api.definition.type.Label(value = "Monto Solicitado")
+	@org.kie.api.definition.type.Description("Monto de dinero solicitado")
+	@org.kie.api.definition.type.Label("Monto Solicitado")
 	private java.lang.Integer monto;
-	@org.kie.api.definition.type.Description(value = "Monto Final Aprobado")
-	@org.kie.api.definition.type.Label(value = "Monto Aprobado")
+	@org.kie.api.definition.type.Description("Monto Final Aprobado")
+	@org.kie.api.definition.type.Label("Monto Aprobado")
 	private java.lang.Integer montoaprobado;
-	@org.kie.api.definition.type.Description(value = "Cliente que solicita el prestamo")
-	@org.kie.api.definition.type.Label(value = "Cliente")
+	@org.kie.api.definition.type.Label("Cliente")
 	private com.learning.prestamo.Cliente cliente;
 
-    public Solicitud() {
-    }
-
+	public Solicitud() {
+	}
 
 	public java.lang.Integer getIdSolicitud() {
 		return this.idSolicitud;
