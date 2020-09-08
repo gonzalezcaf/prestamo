@@ -15,12 +15,22 @@
       <name>c</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>validaciondatos</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <execution-trace>
+      <executionTimeResult>22</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>validaciondatos</ruleName>
+      <explanation>Rule [validaciondatos] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
+  <lastRunResult>2020-09-08 21:25:39.792 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.learning.prestamo</packageName>
