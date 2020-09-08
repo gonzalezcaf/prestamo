@@ -6,7 +6,7 @@ rule "validaciondatos"
 	dialect "mvel"
 	ruleflow-group "validaciondatos"
 	when
-		not (solicitud( )) 
+		exists (solicitud( )) 
 	then
 		ValidacionDatos valdatos = new ValidacionDatos();
 		valdatos.setErrorcode( -1 );
