@@ -6,7 +6,6 @@ rule "validaciondatos"
 	dialect "mvel"
 	ruleflow-group "validaciondatos"
 	when
-		c : Cliente( cedula != null )
 	then
 		ValidacionDatos valdatos = new ValidacionDatos();
 		valdatos.setErrorcode( -1 );
