@@ -8,7 +8,7 @@
     <marshalling-strategies>
         <marshalling-strategy>
             <resolver>mvel</resolver>
-            <identifier>new org.drools.persistence.jpa.marshaller.JPAPlaceholderResolverStrategy("prestamo-pu", classLoader)</identifier>
+            <identifier>org.drools.persistence.jpa.marshaller.JPAPlaceholderResolverStrategy("prestamo-pu", classLoader)</identifier>
             <parameters/>
         </marshalling-strategy>
     </marshalling-strategies>
