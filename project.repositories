@@ -3,17 +3,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <source>PROJECT</source>
+        <id>bxms-projects</id>
+        <url>http://192.168.122.40:8081/repository/bxms-projects/</url>
+        <source>DISTRIBUTION_MANAGEMENT</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>bxms-projects</id>
-        <url>http://192.168.122.40:8081/repository/bxms-projects/</url>
-        <source>DISTRIBUTION_MANAGEMENT</source>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+        <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
