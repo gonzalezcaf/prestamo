@@ -5,7 +5,6 @@ package com.learning.prestamo;
  */
 
 @javax.persistence.Entity
-@javax.persistence.Table(name = "Solicitud")
 public class Solicitud implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
@@ -26,8 +25,9 @@ public class Solicitud implements java.io.Serializable {
 
 	@org.kie.api.definition.type.Description(value = "Llave principal para persistencia de datos en db externa")
 	@org.kie.api.definition.type.Label(value = "id")
-	@javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "ID_GENERATOR", sequenceName = "SOLICITUD_ID_SEQUENCE")
+    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "SOLICITUD_ID_GENERATOR")
+    @javax.persistence.Id
+    @javax.persistence.SequenceGenerator(name = "SOLICITUD_ID_GENERATOR", sequenceName = "SOLICITUD_ID_SEQUENCE")
 	private java.lang.Long id;
 	
 	public Solicitud() {
