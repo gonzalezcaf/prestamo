@@ -17,5 +17,4 @@ rule "validaciondatos"
 		}
 		System.out.println("Se ejecuto la regla:  " + drools.getRule().getName() );
 		System.out.println("Alguno de los datos de la solicitud es nulo.");
-		System.out.println(s.getIdSolicitud().toString());
 end
