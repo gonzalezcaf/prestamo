@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.learning</groupId>
   <artifactId>prestamo</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>prestamo</name>
   <description>Proyecto de solicitud de prestamo para libre inversion</description>
