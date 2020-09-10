@@ -3,7 +3,9 @@
     <persistence-unit name="prestamo-pu" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/prestamoDS</jta-data-source>
+        <class>com.learning.prestamo.Cliente</class>
         <class>com.learning.prestamo.Solicitud</class>
+        <class>com.learning.prestamo.ValidacionDatos</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
