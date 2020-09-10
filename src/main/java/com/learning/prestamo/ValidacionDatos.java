@@ -8,12 +8,16 @@ public class ValidacionDatos implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Description(value = "Codigo del error")
-	@org.kie.api.definition.type.Label(value = "Codigo Error")
+	@org.kie.api.definition.type.Description("Codigo del error")
+	@org.kie.api.definition.type.Label("Codigo Error")
 	private java.lang.Integer errorcode;
-	@org.kie.api.definition.type.Description(value = "Mensaje del código del error")
-	@org.kie.api.definition.type.Label(value = "Mensaje Error")
+	@org.kie.api.definition.type.Description("Mensaje del código del error")
+	@org.kie.api.definition.type.Label("Mensaje Error")
 	private java.lang.String errormessage;
+
+	@org.kie.api.definition.type.Description(value = "Llave principal para persistencia de datos en db externa")
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.lang.Long id;
 
 	public ValidacionDatos() {
 	}
@@ -34,10 +38,19 @@ public class ValidacionDatos implements java.io.Serializable {
 		this.errormessage = errormessage;
 	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
 	public ValidacionDatos(java.lang.Integer errorcode,
-			java.lang.String errormessage) {
+			java.lang.String errormessage, java.lang.Long id) {
 		this.errorcode = errorcode;
 		this.errormessage = errormessage;
+		this.id = id;
 	}
 
 }
