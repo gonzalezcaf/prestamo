@@ -17,6 +17,9 @@ public class ValidacionDatos implements java.io.Serializable {
 
 	@org.kie.api.definition.type.Description(value = "Llave principal para persistencia de datos en db externa")
 	@org.kie.api.definition.type.Label(value = "id")
+    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "VALIDACIONDATOS_ID_GENERATOR")
+    @javax.persistence.Id
+    @javax.persistence.SequenceGenerator(name = "VALIDACIONDATOS_ID_GENERATOR", sequenceName = "VALIDACIONDATOS_ID_SEQUENCE")
 	private java.lang.Long id;
 
 	public ValidacionDatos() {
