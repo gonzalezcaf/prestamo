@@ -27,6 +27,10 @@ public class Cliente implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Mora")
 	private java.lang.Boolean mora;
 
+	@org.kie.api.definition.type.Description(value = "Llave principal para persistencia de datos en db externa")
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.lang.Long id;
+
 	public Cliente() {
 	}
 
@@ -78,15 +82,24 @@ public class Cliente implements java.io.Serializable {
 		this.mora = mora;
 	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
 	public Cliente(java.lang.Integer cedula, java.lang.Integer edad,
 			java.lang.Integer cuenta, java.lang.String tipocuenta,
-			java.lang.Integer saldo, java.lang.Boolean mora) {
+			java.lang.Integer saldo, java.lang.Boolean mora, java.lang.Long id) {
 		this.cedula = cedula;
 		this.edad = edad;
 		this.cuenta = cuenta;
 		this.tipocuenta = tipocuenta;
 		this.saldo = saldo;
 		this.mora = mora;
+		this.id = id;
 	}
 
 }
